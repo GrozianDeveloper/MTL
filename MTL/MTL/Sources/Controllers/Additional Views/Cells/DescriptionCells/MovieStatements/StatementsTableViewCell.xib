@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatementsTableViewCell" rowHeight="295" id="KGk-i7-Jjw" customClass="StatementsTableViewCell" customModule="MTL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="547" height="295"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="547" height="295"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCM-P2-D63">
+                        <rect key="frame" x="153.5" y="122.5" width="110" height="50"/>
+                        <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="71F-4r-cVq"/>
+                            <constraint firstAttribute="width" constant="110" id="jv4-o2-P71"/>
+                        </constraints>
+                        <state key="normal" title="Want">
+                            <color key="titleColor" systemColor="labelColor"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="changeWantStatment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ml6-4c-MWZ"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✔ Watched" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2q0-xD-f02">
+                        <rect key="frame" x="153.5" y="122.5" width="240" height="50"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Kg6-8x-gAa"/>
+                            <constraint firstAttribute="width" constant="240" id="Wc9-wt-cQ1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHo-zx-RBj">
+                        <rect key="frame" x="398.5" y="137.5" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="5TQ-l1-RRq"/>
+                            <constraint firstAttribute="height" constant="20" id="AGR-Ph-Rll"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="...">
+                            <color key="titleColor" systemColor="labelColor"/>
+                        </state>
+                        <connections>
+                            <action selector="tripleDotsTupped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3U4-5P-w4o"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zU-ha-C9Z">
+                        <rect key="frame" x="283.5" y="122.5" width="110" height="50"/>
+                        <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Mpj-75-Sce"/>
+                            <constraint firstAttribute="width" constant="110" id="l5O-pl-b80"/>
+                        </constraints>
+                        <state key="normal" title="Watched">
+                            <color key="titleColor" systemColor="labelColor"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="changeWatchedStatment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Aul-Me-AXY"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="LHo-zx-RBj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9lQ-8H-kaM"/>
+                    <constraint firstItem="2q0-xD-f02" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HDH-M5-dl0"/>
+                    <constraint firstItem="2q0-xD-f02" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="JB8-ja-lte"/>
+                    <constraint firstItem="DCM-P2-D63" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Nqw-U9-I2O"/>
+                    <constraint firstItem="LHo-zx-RBj" firstAttribute="leading" secondItem="2q0-xD-f02" secondAttribute="trailing" constant="5" id="Ver-X4-fgy"/>
+                    <constraint firstItem="DCM-P2-D63" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-65" id="Xpu-cH-BnS"/>
+                    <constraint firstItem="2zU-ha-C9Z" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="65" id="lVA-TC-Pbq"/>
+                    <constraint firstItem="2zU-ha-C9Z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ouF-wW-uMR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tripleDotsButton" destination="LHo-zx-RBj" id="oXw-1a-g8S"/>
+                <outlet property="wantButton" destination="DCM-P2-D63" id="xCX-mv-UZ8"/>
+                <outlet property="watchedButton" destination="2zU-ha-C9Z" id="cnz-5q-Vmk"/>
+                <outlet property="watchedLabel" destination="2q0-xD-f02" id="dhw-vz-JUi"/>
+            </connections>
+            <point key="canvasLocation" x="286.23188405797106" y="187.83482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

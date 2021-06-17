@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieTeamCollectionViewCell" id="gTV-IL-0wX" customClass="MovieTeamCollectionViewCell" customModule="MTL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="209"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="234" height="209"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8GT-aN-uvs">
+                        <rect key="frame" x="57" y="5" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="3Yd-X5-zjY"/>
+                            <constraint firstAttribute="width" secondItem="8GT-aN-uvs" secondAttribute="height" id="CX0-3C-yUV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="60"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sam Big Eliott" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlY-bL-8ra">
+                        <rect key="frame" x="75" y="128" width="84.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ebo-vf-1xf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just Actor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMn-UT-eHR">
+                        <rect key="frame" x="90" y="146" width="54" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="CuC-hD-OYy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="KMn-UT-eHR" firstAttribute="top" secondItem="nlY-bL-8ra" secondAttribute="bottom" constant="2" id="1QN-0N-aQB"/>
+                <constraint firstItem="8GT-aN-uvs" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="2AT-53-ABc"/>
+                <constraint firstItem="nlY-bL-8ra" firstAttribute="width" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="width" constant="-5" id="C0c-9r-HWQ"/>
+                <constraint firstItem="8GT-aN-uvs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="H9j-k5-fXJ"/>
+                <constraint firstItem="nlY-bL-8ra" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Tsx-sU-eNz"/>
+                <constraint firstItem="nlY-bL-8ra" firstAttribute="top" secondItem="8GT-aN-uvs" secondAttribute="bottom" constant="3" id="mmZ-w2-WMN"/>
+                <constraint firstItem="KMn-UT-eHR" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="okw-hk-iok"/>
+            </constraints>
+            <size key="customSize" width="234" height="209"/>
+            <connections>
+                <outlet property="deportamentLabel" destination="KMn-UT-eHR" id="UQw-aA-6nK"/>
+                <outlet property="imageView" destination="8GT-aN-uvs" id="U7F-T6-fNC"/>
+                <outlet property="nameLabel" destination="nlY-bL-8ra" id="F43-lV-rWL"/>
+            </connections>
+            <point key="canvasLocation" x="255.07246376811597" y="152.34375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
